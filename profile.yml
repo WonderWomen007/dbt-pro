@@ -1,0 +1,13 @@
+my_project:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost  # or your PostgreSQL server IP
+      user: postgres
+      password: Admin2025
+      dbname: postgres
+      port: 5432
+      schema: public  # the schema where your models will be stored
+      threads: 4  # the number of parallel queries DBT can run
+      secure_ssl: false  # Set to True if using SSL
